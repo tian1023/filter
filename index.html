@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>滤镜</title>
+		<style type="text/css">
+			img {
+				width: 400px;
+				height: 400px;
+			/*	margin: 0 auto;*/
+				display: block;
+				transition: all 3s;
+			}
+			img:hover {
+				/*滤镜*/
+				-webkit-filter: none;/*鼠标移动滤镜效果无*/
+			}
+			.img1 {
+				-webkit-filter: grayscale(1);/*灰度值，1为百分百，0为百分之零*/
+			}
+			.img2 {
+				-webkit-filter: blur(5px); /*模糊度，像素值越大图像越模糊*/
+			}
+			.img3 {
+				-webkit-filter: brightness(2); /*亮度，1为正常，2为过曝光，0为无亮度显示为黑色*/
+			}
+			.img4 {
+				-webkit-filter: sepia(1);  /*棕色调，0为正常，1为增加棕色调*/
+			}
+			.img5 {
+				-webkit-filter: contrast(2);  /*对比度，默认为1*/
+			}
+			.img6 {
+				-webkit-filter: saturate(3);  /*饱和度，默认为1，调为0为没有饱和度图像为灰色*/
+			}
+			.img7 {
+				-webkit-filter: hue-rotate(60deg);  /*色相旋转，0deg和360deg为原图效果*/
+			}
+		</style>
+	</head>
+	<body>
+		灰度图：<img src="img/1.jpg" class="img1"/>
+		模糊图：<img src="img/1.jpg" class="img2"/>
+		亮度图：<img src="img/1.jpg" class="img3"/>
+		棕色调：<img src="img/1.jpg" class="img4"/>
+		对比度：<img src="img/1.jpg" class="img5"/>
+		饱和度：<img src="img/1.jpg" class="img6"/>
+		色相旋转：<img src="img/1.jpg" class="img7"/>
+	</body>
+</html>
